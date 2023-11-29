@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(250, 100, 54, 0.74);
+    width: 50%;
+    
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background:transparent;
+}
+h1{
+    margin-top:100px;
+    margin-left: 100px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    line-height: 1;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.041);
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+.top h3{
+    margin-left: 100px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    margin:rgb(0, 0, 0)4px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+}
+
+.form-admin{
+    margin-top: 30px;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgba(216, 216, 216);
+    margin-left: 20px;
+    padding: 15px 15px 30px 15px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    
+}
+.login_body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 550px;
+    margin-left: 50%;
+    background-color: rgba(249, 190, 148, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+.image-destaques{
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 10%;
+    box-shadow: 13px 14px 20px;
+}
+.top{
+    margin-top: 200px;
+}
+.barras{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.enviar{
+    left: 330px;
+    margin: 5px 0;
+    width: 30%;
+    padding: 30px;
+    background: rgb(255, 62, 44);
+    
+    font-weight: bold;
+    font-size: 18px;
+    border: None;
+    border-radius: 4px;
+    transition: 1s all;
+    cursor: pointer;
+    position: relative;
+}
+
+.enviar:hover{
+    background: rgb(248, 100, 50);
+    transform: scale(1.06);
+}
+
+
+@media (max-width: 680px){
+    .form-admin{
+        margin-top: 30px;
+        width: 25vh;
+        height: 300px;
+        border-radius: 20px;
+        background-color: rgba(216, 216, 216);
+        margin-left: 20px;
+        padding: 15px;
+        text-align: center;
+        margin-left: 80%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        
+    }
+    .login_body {
+        padding: 10px;
+        z-index: 90;
+        position: relative;
+        width: 40vh;
+        height: 550px;
+        margin-left: 100%;
+        background-color: rgba(249, 190, 148, 0.75);
+        border-radius: 10px;
+        box-sizing: border-box;
+        transform: translateX(-50%);
+    }
+    .navlist{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width: 150px;
+        height: 80vh;
+        background: #0f0000f1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        transition: all .55s ease;
+    }
+    .enviar{
+        left: 10px;
+        width: 50%;
+        background: orange;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 18px;
+        border: None;
+        border-radius: 4px;
+        transition: 1s all;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    
+    .enviar:hover{
+        background: darkorange;
+        transform: scale(1.06);
+    }
+}
